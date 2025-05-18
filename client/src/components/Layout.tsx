@@ -1,16 +1,11 @@
+import { Outlet } from "react-router-dom"
 import Header from "./Header"
 
 export const Layout = () =>{
     return(
-        <>
+        <div className="w-full max-w-[1200px] mx-auto h-screen py-[30px]">
         <Header />
-        <main>
-            <div>post</div>
-            <div>post</div>
-            <div>post</div>
-            <div>post</div>
-        </main>
-            {/* <Outlet /> */}
-        </>
+            <Outlet />
+        </div>
     )
 }
